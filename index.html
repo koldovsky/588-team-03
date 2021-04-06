@@ -1,37 +1,58 @@
+<!-- Верстка головної сторінки, Андрій-->
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colora Podcast</title>
-    <link rel="" href="">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                Colora Podcast
-            </div>
-            <div class="menu">
-                    <a href="#home">Home</a>
-                    <a href="podcast.html">Podcast</a>
-                    <a href="about-us.html">About Us</a>
-                    <a href="shop.html">Shop</a>
-                    <a href="#donate">Donate</a>
-                    <a href="contacts.html">Contacts</a>
-                    <a href="cart.html">Cart</a>
-            </div>
-        </nav>
-        <section>
-            <h1>Quantum Company</h1>
-            <p class="subheading">We can execute even the most unpredictable ideas!</p>
-            <hr>
-            <a href="request-a-quote" class="button">Request a quote</a>
-            <a href="learn-more" class="button">Learn more</a>
-        </section>
-    </header>
-    <main>
-        <h2 id="latest-episodes">Latest Episodes</h2>
-    </main>
-</body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="#">
+                <h2 class="header__title">Colora Podcast</h2>
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__list-item"><a class="menu__list-link" href="podcast.html">Podcasts</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="about-us.html">About us</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="shop.html">Shop</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#donate">Donate</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="intro">
+    <div class="container">
+        <div class="intro__describe">
+            <h1 class="intro__describe-title">Quantum Company</h1>
+            <p class="intro__describe-text">We can execute even the most unpredictable ideas!</p>
+        </div>
+        <div class="intro__bottons">
+            <a href="" class="intro__botton-1">
+                Request a quote</a>
+            <a href="" class="intro__button-2">Learn more</a>
+        </div>
+    </div>
+</section>
+
+<section class="episodes">
+    <div class="container">
+        <h2 class="episodes__title">
+            Latest episodes
+        </h2>
+        <div class="episodes__item">
+            <img src="" alt="**">
+            <h3>Everything is alive</h3>
+            <p>Louis is a can of generic cola. He’s been on the shelf a long while.</p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+</section>
 </html>
