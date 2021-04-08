@@ -69,7 +69,7 @@ a{
     color: #fefefe;
 }
 .story{
-    color: cadetblue;
+    color: #aab6cd;;
 }
 .story-two{
     background: #1d1f23;
@@ -79,14 +79,14 @@ a{
     color: #fefefe;
 }
 .biography{
-    color: cadetblue;
+    color: #aab6cd;;
 }
 .follow-colora-podcast{
     background: #1d1f23;
     color:#fefefe;
 }
 .subheading{
-    color: cadetblue;
+    color: #aab6cd;;
     text-align: center;
 }
 .listen{
@@ -139,7 +139,7 @@ a{
     transition: all .3s;
     border: 1px solid transparent;
     display: inline-block;
-    margin-right: 20px ;
+    margin-right: 20px;
     text-align: center;
 }
 .donate-button:hover{
@@ -197,5 +197,17 @@ a{
     color: #fefefe;
 }
 .creators{
-    color: cadetblue;
+    color: #aab6cd;;
+}
+.end-menu-link:hover{
+    color: #ffbc41;
+}
+.read-more{
+    color: gold;
+}
+.read-more:hover{
+    text-decoration: underline;
+}
+.team__people-link{
+    color: #fefefe;
 }
