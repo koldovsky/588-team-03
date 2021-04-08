@@ -1,0 +1,178 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+}
+
+h2, h3{
+    font-family: 'Abril Fatface', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin:  0 auto;
+}
+
+.header__title{
+    font-size: 32px;
+    color: #fefefe;
+    padding-left: 15px;
+    padding-bottom: 23px;
+}
+.menu__list-link{
+    color: #fefefe;
+}
+
+.header{
+    background: #1d1f23;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+
+.menu__list{
+    display: flex;
+    padding-left: 30px;
+}
+
+.menu__list-item{
+    margin: 0 20px;
+    padding-bottom: 23px;
+}
+.menu__list-link:hover{
+    color: #ffbc41;
+}
+
+
+.intro{
+    background-image: url(../img/img-andrii/background-main.jpg);
+    height: 740px;
+    margin-top: -20px;
+    padding-left: 15px;
+}
+.intro__all{
+    padding-top: 265px;
+}
+
+.intro__describe-title{
+    font-size: 56px;
+    color: #fefefe;
+    padding-bottom: 45px;
+}
+
+.intro__describe-text{
+    font-size: 19px;
+    color: #aab6cd;
+    padding-bottom: 55px;
+}
+
+.intro__button-1{
+    font-size: 16px;
+    color: #1d1f23;
+    padding:  18px 35px;
+    background: #ffc962;  
+    transition: all .3s;
+    border: 1px solid transparent;
+    display: inline-block;
+    margin-right: 20px ;
+}
+
+.intro__button-1:hover{
+    background: #ffb72f;
+}
+
+.intro__button-2{
+    font-size: 16px;
+    color: #fefefe;
+    padding:  18px 35px;
+    border: 2px solid #ffc962;
+    transition: all .5s;
+    display: inline-block;
+}
+.intro__button-2:hover{
+    border: 2px solid #fefefe;
+}
+
+.episodes{
+    height: 1230px;
+    background: #1d1f23;
+  
+}
+
+.episodes__title{
+    text-align: center;
+    padding-top: 180px;  
+    line-height: 1.22; 
+    color: #fefefe;
+    font-size: 45px;
+}
+
+.episodes__items{
+    padding-left: 15px;
+    padding-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    gap: 30px;
+}
+
+.episodes__item{
+    display: grid;
+    gap: 20px;
+}
+
+.episode__item-tltle{
+    padding-top: 20px;
+    line-height: 1.33;
+    font-size: 30px;
+    color: #fefefe;
+    letter-spacing: 1px;
+}
+
+.episode__item-text{
+    color: #9db6c2;
+}
+
+.episode__more{
+ margin-top: 0 ;
+}
+
+.episodes__more-play{
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+    padding-top: 12px;
+}
+
+.episode__item-link{
+    color: #ffb72f;
+    padding-left: 5px;
+}
+
+.episode__item-link:hover{
+    text-decoration: underline;
+}
