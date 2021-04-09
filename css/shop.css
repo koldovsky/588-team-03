@@ -1,1 +1,29 @@
+    html{
+        font-family: Mulish,sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: normal;
+}
+    header{
+    background-color: #1d1f23;
+   
+    }
+    .main_title{
+        font-size: 32px;
+        color: #fefefe;
+        padding-left: 15px;
+        padding-bottom: 23px;
+        font-family: Abril Fatface,cursive;
 
+    }
+    .menu{
+        color: #fefefe;
+    }
+    * {
+        box-sizing: inherit;
+        margin: 0;
+       
+    }
+    a{
+        text-decoration: none;
+    }
