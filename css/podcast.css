@@ -1,0 +1,64 @@
+:root {
+    background: #1d1f23;
+}
+body {
+     font-size: 16px;
+     font-weight: normal;
+     line-height: 19px;
+}
+h1 {
+    font-family: Abril Fatface,cursive;
+    color: #fff;
+    font-size: 56px;
+    text-align: center;
+}
+.heading-profession {
+    text-align: left;
+    color: #fff;
+    font-family: Abril Fatface,cursive;
+    font-size: 34px;
+}
+.date {
+    font-family: Muli,sans-serif;
+    color: #aab6cd;
+}
+.information {
+    font-size: 26px;
+    font-family: Abril Fatface,cursive;
+    color: #fff;
+    line-height: 1.33 !important;
+}
+.episode__item-link {
+    color: #ffb72f;
+    padding-left: 5px;
+}
+.episodes__more-play {
+    width: 25px;
+    height: 25px;
+    padding-right: 10px;
+    padding-top: 12px;
+}
+a {
+    text-decoration: none;
+}
+#follow-colora-podcast {
+    text-align: center;
+    line-height: 1.22;
+    color: #fefefe;
+    font-size: 45px;
+    font-family: Abril Fatface,cursive;
+}
+.subheading {
+    font-family: Muli,sans-serif;
+    color: #aab6cd;
+    font-size: 16px;
+}
+h3 {
+    color:#fff;
+    font-size: 24px!important;
+    line-height: 1.33!important;
+    letter-spacing: 0!important;
+}
+.listen {
+    color: #ffc962;
+}
