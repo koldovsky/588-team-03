@@ -7,6 +7,14 @@ body {
      line-height: 19px;
      font-family: Abril Fatface, cursive;
 }
+header div a h2 {
+    color: #fff;
+    font-family: Abril Fatface,cursive;
+}
+header div  nav a {
+    color: #fff;
+    font-family: Muli,sans-serif;
+}
 h1 {
     color: #fff;
     font-size: 56px;
@@ -68,4 +76,16 @@ h3 {
 }
 .episode__item-link:hover {
     text-decoration:underline;
+}
+footer p {
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+}
+footer div a {
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+}
+.code {
+    color: #aab6cd;
+    font-family: 'Mulish', sans-serif;
 }
