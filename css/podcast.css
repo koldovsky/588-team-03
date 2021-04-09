@@ -5,9 +5,9 @@ body {
      font-size: 16px;
      font-weight: normal;
      line-height: 19px;
+     font-family: Abril Fatface, cursive;
 }
 h1 {
-    font-family: Abril Fatface,cursive;
     color: #fff;
     font-size: 56px;
     text-align: center;
@@ -64,5 +64,8 @@ h3 {
     cursor: pointer;
 }
 .listen:hover{
+    text-decoration:underline;
+}
+.episode__item-link:hover {
     text-decoration:underline;
 }
