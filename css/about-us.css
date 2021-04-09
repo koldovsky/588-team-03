@@ -1,0 +1,216 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing:inherit;
+    margin: 0;
+}
+body{
+    font-family: Mulish,sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+}
+h2,h3{
+    font-family: Abril Fatface,cursive;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin:  0 auto;
+}
+.header__title{
+    font-size: 32px;
+    color: #fefefe;
+    padding-left: 15px;
+    padding-bottom: 23px;
+}
+.menu-link{
+    color: #fefefe;
+}
+
+.header{
+    background: #1d1f23;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+.menu__list{
+    display: flex;
+    padding-left: 30px;
+}
+.menu__list-item{
+    margin: 0 20px;
+    padding-bottom: 23px;
+}
+.story-container-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+}
+.story-container-down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1700px;
+}
+.story-one{
+    background: #1d1f23;
+    color: #fefefe;
+}
+.story{
+    color: #aab6cd;;
+}
+.story-two{
+    background: #1d1f23;
+}
+.our-team{
+    background: #1d1f23;
+    color: #fefefe;
+}
+.biography{
+    color: #aab6cd;;
+}
+.follow-colora-podcast{
+    background: #1d1f23;
+    color:#fefefe;
+}
+.subheading{
+    color: #aab6cd;;
+    text-align: center;
+}
+.listen{
+    color:gold;
+}
+.donations{
+    background: #1d1f23;
+    color: #fefefe;
+}
+.one-team{
+    display: flex;
+    justify-content: space-between;
+    width: 1470px;
+}
+.name-page{
+    font-size: 56px;
+    color: #fefefe;
+    padding-bottom: 45px;
+    align-items: center;
+    text-align: center;
+}
+.menu-link:hover{
+    color: #ffbc41;
+}
+.two-team{
+    display: flex;
+    justify-content: space-between;
+    width: 1600px;
+}
+.three-team{
+    display: flex;
+    justify-content: space-between;
+    width: 1585px;
+}
+.google-spotify{
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
+.rss-apple{
+    display: flex;
+    justify-content: space-between;
+    width: 1350px;
+}
+.donate-button{
+    font-size: 16px;
+    color: #1d1f23;
+    padding:  18px 35px;
+    background: #ffc962;  
+    transition: all .3s;
+    border: 1px solid transparent;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+}
+.donate-button:hover{
+    background: #ffb72f;
+}
+.name-page-two{
+    text-align: center;
+    padding-top: 180px;  
+    line-height: 1.22; 
+    color: #fefefe;
+    font-size: 45px;
+}
+.name-page-three{
+    text-align: center;
+    padding-top: 180px;  
+    line-height: 1.22; 
+    color: #fefefe;
+    font-size: 45px;
+}
+.footer{
+    background: #1d1f23;
+}
+.end-menu__list-item{
+    margin: 0 20px;
+    padding-bottom: 23px;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+}
+.end-menu__list{
+    display: flex;
+    padding-left: 30px;
+}
+.footer__title{
+    font-size: 32px;
+    color: #fefefe;
+    padding-left: 15px;
+    padding-bottom: 23px;
+}
+.end-menu-link{
+    color: #fefefe;
+}
+.created{
+    font-style: normal;
+    color: #fefefe;
+}
+.created-by{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    color: #fefefe;
+}
+.creators{
+    color: #aab6cd;;
+}
+.end-menu-link:hover{
+    color: #ffbc41;
+}
+.read-more{
+    color: gold;
+}
+.read-more:hover{
+    text-decoration: underline;
+}
+.team__people-link{
+    color: #fefefe;
+}
+.listen:hover{
+    text-decoration: underline;
+}
