@@ -1,91 +1,56 @@
-:root {
-    background: #1d1f23;
+* { box-sizing: border-box;
+    font-family: Abril Fatface, cursive;
 }
-body {
-     font-size: 16px;
-     font-weight: normal;
-     line-height: 19px;
-     font-family: Abril Fatface, cursive;
+html {
+    background-color:#1d1f23;
 }
-header div a h2 {
+header {
+    height: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+header div a {
     color: #fff;
-    font-family: Abril Fatface,cursive;
-}
-header div  nav a {
-    color: #fff;
-    font-family: Muli,sans-serif;
-}
-h1 {
-    color: #fff;
-    font-size: 56px;
-    text-align: center;
-}
-.heading-profession {
-    text-align: left;
-    color: #fff;
-    font-family: Abril Fatface,cursive;
-    font-size: 34px;
-}
-.date {
-    font-family: Muli,sans-serif;
-    color: #aab6cd;
-}
-.information {
-    font-size: 26px;
-    font-family: Abril Fatface,cursive;
-    color: #fff;
-    line-height: 1.33 !important;
-}
-.episode__item-link {
-    color: #ffb72f;
-    padding-left: 5px;
-}
-.episodes__more-play {
-    width: 25px;
-    height: 25px;
-    padding-right: 10px;
-    padding-top: 12px;
-}
-a {
     text-decoration: none;
 }
-#follow-colora-podcast {
-    text-align: center;
-    line-height: 1.22;
-    color: #fefefe;
-    font-size: 45px;
-    font-family: Abril Fatface,cursive;
+.headertitle {
+    font-size: 34px;
+    font-stretch: 100%;
+    
 }
-.subheading {
+ul {
+    margin-left: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 30px;
+}
+.menu-item-list a {
     font-family: Muli,sans-serif;
-    color: #aab6cd;
-    font-size: 16px;
 }
-h3 {
-    color:#fff;
-    font-size: 24px!important;
-    line-height: 1.33!important;
-    letter-spacing: 0!important;
+.container {
+    max-width: 1220;
+    margin: 0 auto;
+    padding: 0 10px;
 }
-.listen {
-    color: #ffc962;
-    cursor: pointer;
+
+.menu-list {
+    display: flex;
+    padding-left: 30px;
 }
-.listen:hover{
-    text-decoration:underline;
-}
-.episode__item-link:hover {
-    text-decoration:underline;
-}
-footer p {
+.podcast {
+    background: url(../img/img-tolik/phone-in-hand.jpg) 50% 50% / cover no-repeat;
+    height: 250px;
     color: #fff;
-    font-family: 'Mulish', sans-serif;
+    font-size: 58px;
 }
-footer div a {
-    color: #fff;
-    font-family: 'Mulish', sans-serif;
-}
-.code {
-    color: #aab6cd;
-    font-family: 'Mulish', sans-serif;
+h1 {
+    text-align: center;
+    padding-top: 70px;
 }

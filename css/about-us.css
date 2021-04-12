@@ -13,13 +13,27 @@ body{
     font-size: 16px;
     line-height: 19px;
     font-weight: normal;
+    max-width: 980px;
+    margin: auto;
+    background-color: #1d1f23;
 }
+
+li {
+    list-style-type: none;
+}
+
+ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+
 .main-name{
     color: #fefefe;
-    margin-top:0 100px;
-    margin-bottom:0 100px;
+    margin-top:0;
+    margin-bottom:0;
     
 }
+
 .intro{
     background-image: url(../img/img-andrii/background-main.jpg);
     height: 340px;
@@ -29,25 +43,31 @@ body{
     font-family:Abril Fatface,cursive;
     font-size: 36px;
     font-weight: 700;
-    text-align: center;
+    text-align: center; 
+    width: 980px;
 }
+
 h2,h3{
     font-family: Abril Fatface,cursive;
 }
+
 a{
     text-decoration: none;
 }
+
 .container{
     max-width: 1220px;
     padding: 0 10px;
     margin:  0 auto;
 }
-.header__title{
+
+.header--title{
     font-size: 32px;
     color: #fefefe;
     padding-left: 15px;
     padding-bottom: 23px;
 }
+
 .menu-link{
     color: #fefefe;
 }
@@ -55,49 +75,57 @@ a{
 .header{
     background: #1d1f23;
 }
-.header__inner{
+
+.header--inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 130px;
 }
-.menu__list{
+
+.menu--list{
     display: flex;
     padding-left: 30px;
 }
-.menu__list-item{
+
+.menu--list-item{
     margin: 0 20px;
     padding-bottom: 23px;
 }
+
 .story-container-up{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1300px;
+    width: 1000px;
 }
+
 .story-container-down{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1700px;
+    width: 1400px;
 }
+
 .story-one{
     background: #1d1f23;
     color: #fefefe;
+    margin-top: 50px;
 }
+
 .story{
     color: #aab6cd;;
 }
+
 .story-two{
     background: #1d1f23;
 }
-.our-team{
-    background: #1d1f23;
-    color: #fefefe;
-}
+
+
 .biography{
     color: #aab6cd;;
 }
+
 .follow-colora-podcast{
     background: #1d1f23;
     color:#fefefe;
@@ -106,18 +134,24 @@ a{
     color: #aab6cd;;
     text-align: center;
 }
+
 .listen{
     color:gold;
 }
+
 .donations{
     background: #1d1f23;
     color: #fefefe;
 }
+
 .one-team{
     display: flex;
     justify-content: space-between;
-    width: 1470px;
+    width: 1170px;
+    background: #1d1f23;
+    color: #fefefe;
 }
+
 .name-page{
     font-size: 56px;
     color: #fefefe;
@@ -125,29 +159,39 @@ a{
     align-items: center;
     text-align: center;
 }
+
 .menu-link:hover{
     color: #ffbc41;
 }
+
 .two-team{
     display: flex;
     justify-content: space-between;
-    width: 1600px;
+    width: 1300px;
+    background: #1d1f23;
+    color: #fefefe;
 }
+
 .three-team{
     display: flex;
     justify-content: space-between;
-    width: 1585px;
+    width: 1285px;
+    background: #1d1f23;
+    color: #fefefe;
 }
+
 .google-spotify{
     display: flex;
     justify-content: space-between;
-    width: 1300px;
+    width: 1000px;
 }
+
 .rss-apple{
     display: flex;
     justify-content: space-between;
-    width: 1350px;
+    width: 1050px;
 }
+
 .donate-button{
     font-size: 16px;
     color: #1d1f23;
@@ -156,7 +200,9 @@ a{
     transition: all .3s;
     border: 1px solid transparent;
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 425px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .donate-button:hover{
@@ -179,21 +225,21 @@ a{
 .footer{
     background: #1d1f23;
 }
-.end-menu__list-item{
+.end-menu--list-item{
     margin: 0 20px;
     padding-bottom: 23px;
 }
-.footer__inner{
+.footer--inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 130px;
 }
-.end-menu__list{
+.end-menu--list{
     display: flex;
     padding-left: 30px;
 }
-.footer__title{
+.footer--title{
     font-size: 32px;
     color: #fefefe;
     padding-left: 15px;
@@ -225,7 +271,7 @@ a{
 .read-more:hover{
     text-decoration: underline;
 }
-.team__people-link{
+.team--people-link{
     color: #fefefe;
 }
 .listen:hover{
