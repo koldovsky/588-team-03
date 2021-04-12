@@ -1,29 +1,76 @@
-    html{
-        font-family: Mulish,sans-serif;
-        font-size: 16px;
-        line-height: 19px;
-        font-weight: normal;
-}
-    header{
-    background-color: #1d1f23;
-   
-    }
-    .main_title{
-        font-size: 32px;
-        color: #fefefe;
-        padding-left: 15px;
-        padding-bottom: 23px;
-        font-family: Abril Fatface,cursive;
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
 
-    }
-    .menu{
-        color: #fefefe;
-    }
-    * {
-        box-sizing: inherit;
-        margin: 0;
-       
-    }
-    a{
-        text-decoration: none;
-    }
+:root{
+    font-family: "Abril Fatface", sans-serif;
+    --main-color: #1d1f23;
+    --accent-color: #fefefe;
+    
+}
+
+ * {
+    box-sizing: inherit;
+    margin: 0;
+   
+}
+
+header{
+    background-color: #1d1f23;
+    height: 110px;
+}
+
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin:  0 auto;
+    padding-top: 25px;
+    padding-left: 150px;
+}
+
+header div a h2 {
+    color: #fff;
+    
+    text-decoration: none;
+}
+
+header div a{
+    color: #fff;
+    font-family: Muli,sans-serif;
+}
+
+.main_title{
+    font-size: 39px;
+    color: #fefefe;
+    padding-left: 15px;
+    padding-bottom: 23px;
+    font-family: Abril Fatface,cursive;
+
+}
+
+header .menu a{
+   text-decoration: none;
+   color: #fefefe;
+   align-items: center;
+}
+
+.menu {
+    width: 300px;
+    display: inline-block;
+}
+
+.headertitle {
+    width: 200px;
+    display: inline-block;
+}
+
+.banner {
+    background-image: url(../img/img-vlada/fon-shop.jpg);
+    height: 340px;
+    margin-top: -20px;
+    padding-left: 105px;
+    padding-top: 150px;
+    font-family:Abril Fatface,cursive;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #fefefe;
+}
