@@ -1,12 +1,12 @@
-html{
-    box-sizing: border-box;
-}
-
 *,
 *::after,
 *::before{
     box-sizing: inherit;
     margin: 0;
+}
+
+html{
+    box-sizing: border-box;
 }
 
 body{
@@ -158,7 +158,7 @@ li {
 }
 
 .episode__more{
- margin-top: 0 ;
+    margin-top: 0 ;
 }
 
 .episodes__more-play{
@@ -181,7 +181,6 @@ li {
     background: url(../img/img-andrii/background-podcusts.jpg) no-repeat fixed;
     background-size: 100%;
     height: 650px;
-    
 }
 
 .podcasts__items{
@@ -190,7 +189,6 @@ li {
   gap: 40px 30px;
   margin-top: 65px;
   margin-left: 20px;
- 
 }
 
 .podcasts__item, .podcasts__item-center{
@@ -212,7 +210,6 @@ grid-template-areas: "img title"
     font-size: 45px;
     color: #fefefe;
     text-align: center;
-    
 }
 
 .podcasts__item-title{
@@ -259,11 +256,11 @@ grid-template-areas: "img title"
 }
 
 .sale__text{
-font-size: 19px;
-color: #9db6c2;
-padding-top: 30px ;
-text-align: center;
-line-height: 1.4;
+    font-size: 19px;
+    color: #9db6c2;
+    padding-top: 30px ;
+    text-align: center;
+    line-height: 1.4;
 }
 
 .timer{
