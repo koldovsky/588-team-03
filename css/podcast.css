@@ -1,5 +1,6 @@
 * { box-sizing: border-box;
     font-family: Abril Fatface, cursive;
+    color: #fff;
 }
 html {
     background-color:#1d1f23;
@@ -15,7 +16,6 @@ header {
 }
 
 header div a {
-    color: #fff;
     text-decoration: none;
 }
 .headertitle {
@@ -47,10 +47,59 @@ li {
 .podcast {
     background: url(../img/img-tolik/phone-in-hand.jpg) 50% 50% / cover no-repeat;
     height: 250px;
-    color: #fff;
     font-size: 58px;
 }
 h1 {
     text-align: center;
     padding-top: 70px;
 }
+
+
+.heading-profession {  
+    font-size: 45px;
+    margin-left: 30px;
+}
+.sport-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.sport-players {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.096);
+   
+}
+.sport-players-down {
+    flex-direction: row-reverse;
+}
+.episode-more {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.date {
+    font-family: Muli, sans-serif;
+    color: #aab6cd;
+}
+.information {
+    font-size: 26px;
+}
+a {
+    text-decoration: none;
+}
+.episode-item-link {
+    color: #ffc962;
+    cursor: pointer;
+}
+.episode-item-link:hover {
+    text-decoration: underline;
+}
+.episodes-more-play {
+    padding-left: 10px;
+    padding-top: 15px;
+    width: 33px;
+    height: 33px;
+    
+}
+
