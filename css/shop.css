@@ -1,11 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
-
-:root{
-    font-family: "Abril Fatface", sans-serif;
-    --main-color: #1d1f23;
-    --accent-color: #fefefe;
-    
-}
+@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap);
 
  * {
     box-sizing: inherit;
@@ -15,62 +9,63 @@
 
 header{
     background-color: #1d1f23;
-    height: 110px;
+    padding: 30px 40px;
 }
 
-.container{
-    max-width: 1220px;
-    padding: 0 10px;
-    margin:  0 auto;
-    padding-top: 25px;
-    padding-left: 150px;
-}
-
-header div a h2 {
-    color: #fff;
-    
+.headertitle{
+    color:#fefefe;
     text-decoration: none;
+    
 }
 
-header div a{
-    color: #fff;
-    font-family: Muli,sans-serif;
+div .menu{
+    color:#fefefe;
+    text-decoration: none;
+   
 }
-
-.main_title{
-    font-size: 39px;
-    color: #fefefe;
-    padding-left: 15px;
-    padding-bottom: 23px;
-    font-family: Abril Fatface,cursive;
-
-}
-
-header .menu a{
-   text-decoration: none;
-   color: #fefefe;
-   align-items: center;
-}
-
-.menu {
-    width: 300px;
-    display: inline-block;
-}
-
-.headertitle {
-    width: 200px;
-    display: inline-block;
+.container{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
 .banner {
-    background-image: url(../img/img-vlada/fon-shop.jpg);
-    height: 340px;
-    margin-top: -20px;
-    padding-left: 105px;
-    padding-top: 150px;
-    font-family:Abril Fatface,cursive;
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+    url(../img/img-vlada/fon-shop.jpg);
+    height: auto;
+    padding: 100px 0;
+    font-family: "Abril Fatface", cursive;
     font-size: 36px;
     font-weight: 700;
     text-align: center;
     color: #fefefe;
 }
+
+.main {
+    background-color: #1d1f23;
+    padding: 95px 0;
+    font-family: "Mulish", sans-serif;
+
+}
+.products {
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;
+    grid-template-rows: 50% 50%;
+    justify-items: center;
+}
+
+.photo {
+    width: 250px;
+    height: 200px;
+}
+ h2 {
+     color:#fefefe;
+ }
+
+  h3 {
+      color:#E03A3E;
+  }
