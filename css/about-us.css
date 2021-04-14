@@ -110,9 +110,9 @@ a{
 }
 
 .container-team {
-    background-image: url(http://res2.weblium.site/res/5c472806e2942d00221bc81d/5c4abeef6265a300250243cf_optimized_1920.webp);
-    background-size: 100%;
-}
+    height: 1000px;
+    background: url(http://res2.weblium.site/res/5c472806e2942d00221bc81d/5c4abeef6265a300250243cf_optimized_1920.webp);
+}   
 .story-one{
     background: #1d1f23;
     color: #fefefe;

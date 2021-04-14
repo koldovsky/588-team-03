@@ -21,6 +21,7 @@ header div a {
 .headertitle {
     font-size: 34px;
     font-stretch: 100%;
+    font-weight: 400;
 }
 ul {
     margin-left: 0;
@@ -42,17 +43,20 @@ li {
     padding-left: 30px;
 }
 .podcast {
-    background: url(../img/img-tolik/phone-in-hand.jpg) 50% 50% / cover no-repeat;
+    background: rgb(48, 47, 47, 0.8) url(../img/img-tolik/phone-in-hand.jpg) 50% 50% / cover no-repeat;
+    background-blend-mode: darken;
     height: 250px;
     font-size: 58px;
 }
 h1 {
     text-align: center;
     padding-top: 70px;
+    font-weight: 400;
 }
 .heading-profession {  
     font-size: 45px;
     margin-left: 30px;
+    font-weight: 400;
 }
 .heading-section {
     display: grid;
@@ -96,4 +100,39 @@ a {
     width: 33px;
     height: 33px; 
 }
+#follow-colora-podcast {
+    font-size: 40px;
+    font-weight: 400;
+    font-stretch: 100%;
+    text-align: center;
+    line-height: 1.22;
+    padding-top: 45px;
+}
+.subheading {
+    font-size: 19px;
+    line-height: 1.47;
+    text-align: center;
+}
+.follow-colora-podcast-section {
+    background: rgb(48, 47, 47, 0.8) url(../img/img-tolik/follow-background.webp) no-repeat 48.75% 83.64%;
+    background-blend-mode: darken;
+}
+.logo-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.logo-list-item {
+    display: flex;
+}
+h3 {
+    font-size: 24px;
+    font-stretch: 100%;
+    font-weight: 400;
+}
+.episode-item-link-logo {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}   
+
 
