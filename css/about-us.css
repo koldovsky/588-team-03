@@ -20,7 +20,7 @@ body{
     font-size: 16px;
     line-height: 19px;
     font-weight: normal;
-    max-width: 980px;
+    max-width: 1880px;
     margin: auto;
 }
 
@@ -51,7 +51,7 @@ ul{
     font-size: 36px;
     font-weight: 700;
     text-align: center; 
-    width: 1500px;
+    width: 2000px;
 }
 
 h2,h3{
@@ -113,7 +113,7 @@ a{
 .container-team {
     background: rgb(48, 47, 47, 0.8) url(../img/img-sasha/guy-with-a-micsher.webp) no-repeat 50% 50%;
     background-blend-mode: darken;
-    width: max-content;
+    width: 2000px;
 }
 .story-one{
     margin-top: 50px;
