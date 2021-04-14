@@ -1,3 +1,7 @@
+:root{
+    --white-color: #fefefe;
+}
+
 *,
 *::after,
 *::before{
@@ -29,19 +33,24 @@ li {
 }
 
 .container{
-    max-width: 1220px;
+    max-width: 1190px;
     padding: 0 10px;
     margin:  0 auto;
 }
 
 .header__title{
     font-size: 32px;
-    color: #fefefe;
+    color: var(--white-color);
     padding-left: 15px;
     padding-bottom: 23px;
 }
+
+.menu__btn{
+    display: none;
+}
+
 .menu__list-link{
-    color: #fefefe;
+    color: var(--white-color);
 }
 
 .header{
@@ -70,6 +79,7 @@ li {
 
 .intro{
     background: url(../img/img-andrii/background-main.jpg) no-repeat ;
+    background-size: cover;
     height: 740px;
     margin-top: -20px;
     padding-left: 15px;
@@ -80,7 +90,7 @@ li {
 
 .intro__describe-title{
     font-size: 56px;
-    color: #fefefe;
+    color: var(--white-color);
     padding-bottom: 45px;
 }
 
@@ -107,7 +117,7 @@ li {
 
 .intro__button-2{
     font-size: 16px;
-    color: #fefefe;
+    color: var(--white-color);
     padding:  18px 35px;
     border: 2px solid #ffc962;
     transition: all .5s;
@@ -120,14 +130,13 @@ li {
 .episodes{
     height: 1230px;
     background: #1d1f23;
-  
 }
 
 .episodes__title{
     text-align: center;
     padding-top: 180px;  
     line-height: 1.22; 
-    color: #fefefe;
+    color: var(--white-color);
     font-size: 45px;
 }
 
@@ -149,7 +158,7 @@ li {
     padding-top: 20px;
     line-height: 1.33;
     font-size: 30px;
-    color: #fefefe;
+    color: var(--white-color);
     letter-spacing: 1px;
 }
 
@@ -181,6 +190,7 @@ li {
     background: url(../img/img-andrii/background-podcusts.jpg) no-repeat fixed;
     background-size: 100%;
     height: 650px;
+    
 }
 
 .podcasts__items{
@@ -189,9 +199,10 @@ li {
   gap: 40px 30px;
   margin-top: 65px;
   margin-left: 20px;
+ 
 }
 
-.podcasts__item, .podcasts__item-center{
+.podcasts__item, center{
 display: grid;
 grid-template-areas: "img title"
                      "img text";
@@ -208,14 +219,15 @@ grid-template-areas: "img title"
 .podcasts__title{
     padding-top: 80px ;
     font-size: 45px;
-    color: #fefefe;
+    color: var(--white-color);
     text-align: center;
+    
 }
 
 .podcasts__item-title{
     line-height: 1.33;
     font-size: 30px;
-    color: #fefefe;
+    color: var(--white-color);
     letter-spacing: 1px;
     grid-area: title;
     padding-left: 20px;
@@ -227,16 +239,20 @@ grid-template-areas: "img title"
     padding-left: 20px;
 }
 
+.podcast__btn{
+    display: flex;
+    justify-content: center;
+}
+
 .podcasts__link{
     display: inline-block;
     text-align: center;
     font-size: 16px;
-    color: #fefefe;
+    color: var(--white-color);
     padding:  14px 30px;
     border: 2px solid #ffc962;
     transition: all .5s;
     margin-top: 40px;
-    margin-left: 520px;
 }
 
 .podcasts__link:hover{
@@ -250,7 +266,7 @@ grid-template-areas: "img title"
 
 .sale__title{
     font-size: 45px;
-    color: #fefefe;
+    color: var(--white-color);
     padding-top: 80px;
     text-align: center;
 }
@@ -263,26 +279,37 @@ grid-template-areas: "img title"
     line-height: 1.4;
 }
 
+.sale__btn{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .timer{
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 170px 170px 170px 170px;
     grid-template-areas: "time time time time"
                          "days hours minutes seconds";                      
-    margin-top: 60px;
-    justify-items: center;
-    align-items: center;                                
+    margin-top: 60px;      
+    margin-left: 250px;           
+}
+
+.timer__item{
+    border-right: 1px solid #2c2f36;
+    text-align: center;
 }
 
 .timer-t{
     font-size: 54px;
     line-height: 1.5;
-    color: #fefefe;
+    color: var(--white-color);
 }
 
 .timer-p-d, .timer-p-h, .timer-p-m, .timer-p-s{
      font-size: 23px;
-     color: #9db6c2;
+     color: #969799;
 }
 .timer-p-d{
     grid-area: days ;
@@ -318,8 +345,7 @@ grid-template-areas: "img title"
     transition: all .3s;
     border: 1px solid transparent;
     display: inline-block;
-    margin-top: 60px;
-    margin-left: 43%;
+    margin-top : 60px;
 }
 
 .intro__button-3:hover{
@@ -331,7 +357,7 @@ grid-template-areas: "img title"
 }
 .sponsors__title{
     font-size: 42px;
-    color: #fefefe;
+    color: var(--white-color);
     text-align: center;
 }
 
@@ -343,8 +369,6 @@ grid-template-areas: "img title"
 }
 
 .sponsors__images-item{
-    width: 150px;
-    height: 50px;
     margin-left: 30px;
 }
 
@@ -365,13 +389,13 @@ grid-template-areas: "img title"
 
 .contacts__us-link{
     font-size: 16px;
-    color: #fefefe;
+    color: var(--white-color);
     padding:  18px 35px;
     background: #1d1f23;  
     transition: all .3s;
     border: 1px solid transparent;
     display: inline-block;
-    margin-left: 43%;
+    margin-left: 43%
 }
 
 .contacts__us-link:hover{
@@ -382,3 +406,413 @@ grid-template-areas: "img title"
     background: #1d1f23;
     height: 700px;
 }
+
+.about__inner{
+    padding-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    line-height: 1.63em;
+}
+
+.about__describe-title{
+    color: var(--white-color);
+    font-size: 45px;
+}
+
+.about__describe-text{
+    color: #aab6cd;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.learn-more{
+    padding: 12px 30px 12px 30px;
+}
+
+.about__photo-item{
+    width: 545px;
+    height: 330px;
+}
+
+.carousel{
+    margin-top: -200px;
+    background-color: #1d1f23;
+    height: 300px;
+}
+
+.carousel__inner{
+    position: relative;
+}
+
+.carousel__item-box{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.title{
+    margin-bottom: 50px;
+    color: var(--white-color);
+    font-size: 45px;
+    text-align: center;
+}
+
+.carousel__item-title, 
+.carousel__item-text{
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--white-color);
+    font-size: 13px;
+}
+
+.carousel__item-title{
+    text-transform: uppercase;
+}
+
+.carousel__item-text{
+    color: #aab6cd;
+}
+
+.carousel .slick-dots{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.carousel .slick-dots button{
+    font-size: 0;
+    border: none;
+    padding: 0;
+    margin: 0 10px;
+    background-color: #2c2f36;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.slick-btn{
+    position: absolute;
+    top: 50%;
+}
+
+.slick-next{
+    right: 0;
+}
+
+.slick-prev{
+    left: 0;
+}
+
+.carousel .slick-active button{
+    background-color: #c4c4c4;
+}
+
+.carousel li button{
+    transition: all .5s;
+}
+
+.carousel li button:hover{
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.our__team{
+    background: url(../img/img-andrii/about-us-bg.jpg) no-repeat;
+    background-size: cover;
+    color: var(--white-color);
+    height: 1018px;
+}
+
+.team__title-text{
+    text-align: center;
+    font-size: 45px;
+}
+
+.team{
+    padding-top: 70px;
+}
+
+.team__people{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    gap: 60px;
+}
+
+.team__people-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__people-photo img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50% ;
+}
+
+.team__people-discribe{
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+.team__people-name{
+    font-size: 30px;
+    color: var(--white-color);
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 15px;
+    line-height: 0.9em;
+}
+
+.team__people-post{
+    margin-bottom: 15px;
+}
+
+.team__people-about{
+    font-size: 16px;
+    color: #aab6cd;
+}    
+
+.team__people-icon{
+    margin-left: 40px;
+}
+
+.team__people-link img{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px ;
+}
+
+
+
+
+
+
+
+@media (max-width: 2000px) {
+    .episodes__item img{
+        max-width: 100%;
+    }
+    .episodes__items{
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .podcasts{
+        background-size: cover;
+        background-repeat: repeat-x;
+        height: 100%;
+        background-position-x: center;
+    }
+    .episodes__item img{
+        max-width: 100%;
+    }
+    .podcasts__link{
+        margin-bottom: 15px;
+    }
+    .timer{
+        width: 100%;
+        margin-left: 18%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .timer{
+        width: 100%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 991px) {
+    .menu{
+        margin-right: 20px;
+    }
+    .menu__list{
+        display: block;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        background-color: #1d1f23;
+        right: 0;
+        text-align: center;
+        transform: translateY(-450px);
+        transition: all .8s;
+    }
+    .menu__list.menu__list--active{
+        transform: translateY(0);
+    }
+    .menu__list-link{
+        display: block;
+        padding: 10px 0;
+    }
+    .menu__list-item{
+        padding-bottom: 8px;
+    }
+    .menu__btn{
+        display: block;
+        cursor: pointer;
+        width: 24px;
+        height: 16px;
+        border: none;
+        border-top: 2px solid #fefefe;
+        border-bottom: 2px solid #fefefe;
+        background-color: transparent;
+        position: relative;
+    }
+    .menu__btn::before{
+        content: ' ';
+        position: absolute;
+        width: 24px;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        top: 5px; 
+    }
+    .header__title{
+        padding-bottom: 6px;
+    }
+    .intro{
+        background-position-x: center;
+    }
+    .episodes{
+        padding-bottom: 80px;
+        height: 100%;
+    }
+    .episodes__items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .episodes__item img{
+        max-width: 100%;
+    }
+    .episodes__title{
+        padding-top: 140px;
+    }
+    .podcasts__item{
+        display: block;
+    }
+    .podcast__item-img{
+        margin-left: 105px;
+        margin-bottom: 20px;
+    }
+    .podcasts__item-title{
+        font-size: 28px;
+        margin-left: -20px;
+        margin-bottom: 12px;
+    }
+    .podcasts__item-text{
+        margin-left: -20px;
+    }
+    .podcasts__link{
+        margin-bottom: 15px;
+    }
+    .timer{
+        margin-left: 13%;
+    }
+}
+
+@media (max-width: 900px) {
+    .timer{
+        margin-left: 6%;
+    }
+}
+
+@media (max-width: 830px){
+    .timer {
+    margin-left: 1%;
+    }
+}
+
+@media (max-width: 767px){
+    .intro__describe-title{
+        margin-top: -100px;
+        font-size: 48px;
+    }
+    .episodes__items{
+        grid-template-columns: 1fr;
+    }
+    .episodes__title{
+        padding-top: 95px;
+    }
+    .podcasts__items{
+        display: block;
+        text-align: center;
+    }
+    .podcasts__link{
+        margin-bottom: 15px;
+    }
+    .podcasts__item-text{
+        margin-bottom: 20px;
+    }
+    .podcast__item-img{
+        margin-left: 5px;
+        margin-bottom: 20px;
+    }
+    .timer {
+        margin-left: -2%;
+    }
+}
+
+@media (max-width: 700px){
+    .podcasts__link{
+        margin-bottom: 15px;
+    }
+    .timer {
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-left: -5%;
+    }
+    .timer-t {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__title{
+        font-size: 28px;
+        padding-bottom: 6px;
+    }
+    .intro__describe-title{
+        font-size: 48px;
+        line-height: 1.2;
+    }
+    .episodes__title{
+        font-size: 36px;
+    }
+    .timer-p-d, .timer-p-h, .timer-p-m, .timer-p-s{
+        font-size: 20px;
+   }
+   .timer-t{
+       font-size: 30px;
+   }
+   .sale__title{
+       font-size: 38px;
+   }
+}
+
+@media (max-width: 430px) {
+    .learn__more-btn{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .timer-p-d, .timer-p-h, .timer-p-m, .timer-p-s{
+        font-size: 16px;
+   }
+   .timer-t{
+       font-size: 24px;
+   }
+}
+
+@media (max-width: 376px){
+    .podcasts__link{
+        margin-bottom: 15px;
+    }
+    .sale__title{
+        font-size: 34px;
+    }
+ }
+

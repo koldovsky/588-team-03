@@ -7,23 +7,23 @@
    
 }
 
-header{
+header {
     background-color: #1d1f23;
     padding: 30px 40px;
 }
 
-.headertitle{
+.headertitle {
     color:#fefefe;
     text-decoration: none;
     
 }
 
-div .menu{
+div .menu {
     color:#fefefe;
     text-decoration: none;
    
 }
-.container{
+.container {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -47,10 +47,10 @@ div .menu{
 
 .main {
     background-color: #1d1f23;
-    padding: 95px 0;
     font-family: "Mulish", sans-serif;
 
 }
+
 .products {
     display: grid;
     grid-template-columns: 33% 33% 33% ;
@@ -59,13 +59,81 @@ div .menu{
 }
 
 .photo {
-    width: 250px;
-    height: 200px;
+    width: 369.99px;
+    height: 426.23px;
+    margin: 30px 0 0;
+    padding: 0 15px;
 }
+
  h2 {
      color:#fefefe;
+}
+
+h3 {
+      color:#E03A3E;
+}
+
+
+.newsletter {
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+    url(../img/img-vlada/fon-shop.jpg);
+    font-family: "Mulish", cursive;
+    color: #AAB6cd;
+}
+ 
+footer {
+   color: #1d1f23;
+}
+ .menu-footer {
+    padding-top: 85px;
+    padding-bottom: 30px;
+
  }
 
-  h3 {
-      color:#E03A3E;
-  }
+ .end {
+     padding-top: 15px;
+    padding-bottom: 15px;
+ }
+/* button*/
+ input .button {
+    padding: 0;
+    list-style-type: none;
+}
+
+.button {
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: orange;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+.button::before,
+.button::after
+ {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+
+.button::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+
+.button::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
