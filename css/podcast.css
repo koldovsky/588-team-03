@@ -32,6 +32,10 @@ li {
 }
 .menu-item-list a {
     font-family: Muli,sans-serif;
+    cursor: pointer;
+}
+.menu-item-list a:hover {
+    color: #ffc962;
 }
 .container {
     max-width: 1220;
