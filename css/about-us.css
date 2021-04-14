@@ -1,13 +1,18 @@
+:root{
+    --main-color: #fefefe
+}
+
 html{
     box-sizing: border-box;
-    max-width: 980px;
     margin: auto;
+    background-color: #1d1f23;
+    color: var(--main-color);
 }
 
 *,
 *::after,
 *::before{
-    box-sizing:inherit;
+    box-sizing: border-box;
     margin: 0;
 }
 body{
@@ -17,7 +22,6 @@ body{
     font-weight: normal;
     max-width: 980px;
     margin: auto;
-    background-color: #1d1f23;
 }
 
 li {
@@ -30,14 +34,15 @@ ul{
 }
 
 .main-name{
-    color: #fefefe;
+    color: var(--main-color);
     margin-top:0;
     margin-bottom:0;
     
 }
 
 .intro{
-    background-image: url(../img/img-andrii/background-main.jpg);
+    background: rgb(48, 47, 47, 0.8) url(../img/img-andrii/background-main.jpg) no-repeat 50% 50%;
+    background-blend-mode: darken;
     height: 340px;
     margin-top: -20px;
     padding-left: 105px;
@@ -46,7 +51,7 @@ ul{
     font-size: 36px;
     font-weight: 700;
     text-align: center; 
-    width: 980px;
+    width: 1500px;
 }
 
 h2,h3{
@@ -65,17 +70,13 @@ a{
 
 .header--title{
     font-size: 32px;
-    color: #fefefe;
+    color: var(--main-color);
     padding-left: 15px;
     padding-bottom: 23px;
 }
 
 .menu-link{
-    color: #fefefe;
-}
-
-.header{
-    background: #1d1f23;
+    color: var(--main-color);
 }
 
 .header--inner{
@@ -102,7 +103,7 @@ a{
     width: 1000px;
 }
 
-.story-container-down{
+.story-container-down {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -110,12 +111,11 @@ a{
 }
 
 .container-team {
-    background-image: url(http://res2.weblium.site/res/5c472806e2942d00221bc81d/5c4abeef6265a300250243cf_optimized_1920.webp);
-    background-size: 100%;
+    background: rgb(48, 47, 47, 0.8) url(../img/img-sasha/guy-with-a-micsher.webp) no-repeat 50% 50%;
+    background-blend-mode: darken;
+    width: max-content;
 }
 .story-one{
-    background: #1d1f23;
-    color: #fefefe;
     margin-top: 50px;
 }
 
@@ -123,19 +123,13 @@ a{
     color: #aab6cd;
 }
 
-.story-two{
-    background: #1d1f23;
-}
 
 
 .biography{
     color: #aab6cd;;
 }
 
-.follow-colora-podcast{
-    background: #1d1f23;
-    color:#fefefe;
-}
+
 .subheading{
     color: #aab6cd;;
     text-align: center;
@@ -145,22 +139,16 @@ a{
     color:gold;
 }
 
-.donations{
-    background: #1d1f23;
-    color: #fefefe;
-}
+
 
 .one-team{
     display: flex;
     justify-content: space-between;
     width: 1170px;
-    background: #1d1f23;
-    color: #fefefe;
 }
 
 .name-page{
     font-size: 56px;
-    color: #fefefe;
     padding-bottom: 45px;
     align-items: center;
     text-align: center;
@@ -174,15 +162,12 @@ a{
     display: flex;
     justify-content: space-between;
     width: 1300px;
-    background: #1d1f23;
-    color: #fefefe;
 }
 
 .three-team{
     display: flex;
     justify-content: space-between;
     width: 1285px;
-    background: #1d1f23;
     color: #fefefe;
 }
 .team-image{
