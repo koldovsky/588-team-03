@@ -27,30 +27,48 @@ setInterval(counts, 1000);
 
 $(function () {
 
-
-    $('.carousel__inner').slick({
-        arrows: false,
-        dots: true,
+    $('.sponsors__images').slick({
+        arrows: true,
+        dots: false,
         slidesToShow: 1,
-        nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
-        prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    nextArrow: '<img src="img/img-andrii/arrow-right.svg" class="slick-btn slick-next"></img>',
+                    prevArrow: '<img src="img/img-andrii/arrow-left.svg" class="slick-btn slick-next"></img>'
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    nextArrow: '<img src="img/img-andrii/arrow-right.svg" class="slick-btn slick-next"></img>',
+                    prevArrow: '<img src="img/img-andrii/arrow-left.svg" class="slick-btn slick-next"></img>'
+                }
+            },
+            {
+                breakpoint: 2048,
+                settings: "unslick"
+            },
+        ]
     });
 
-    /*$('.sponsors__images').slick({
-        arrows: false,
-        mobileFirst: true,
-        slidesToShow: 2,
-        dots: true, 
-        nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
-        prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
-    });*/
-           
-           
+    $('.carousel__inner').slick({
+        arrows: true,
+        dots: true,
+        slidesToShow: 1,
+        nextArrow: '<img src="img/img-andrii/arrow-right.svg" class="slick-btn slick-next"></img>',
+        prevArrow: '<img src="img/img-andrii/arrow-left.svg" class="slick-btn slick-next"></img>'
+    });
 
     $('.menu__btn').on('click', function () {
         $('.menu__list').toggleClass('menu__list--active');
     });
 
-
 });
+
 

@@ -32,6 +32,10 @@ li {
 }
 .menu-item-list a {
     font-family: Muli,sans-serif;
+    cursor: pointer;
+}
+.menu-item-list a:hover {
+    color: #ffc962;
 }
 .container {
     max-width: 1220;
@@ -123,6 +127,8 @@ a {
 }
 .logo-list-item {
     display: flex;
+    margin: 0 30px 30px 55px;
+    padding-bottom: 20px;
 }
 h3 {
     font-size: 24px;
@@ -133,6 +139,16 @@ h3 {
     display: flex;
     align-items: flex-end;
     padding-bottom: 10px;
-}   
+}
+.created-by {
+    display: flex;
+    justify-content: space-between;
+}
+.code {
+    margin-top: 0px;
+}
+.reserved {
+    margin-bottom: 10px;
+}
 
 
