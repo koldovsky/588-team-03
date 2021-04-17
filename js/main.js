@@ -38,7 +38,7 @@ $(function () {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     nextArrow: '<img src="img/img-andrii/arrow-right.svg" class="slick-btn slick-next"></img>',
-                    prevArrow: '<img src="img/img-andrii/arrow-left.svg" class="slick-btn slick-next"></img>'
+                    prevArrow: '<img src="img/img-andrii/arrow-left.svg" class="slick-btn slick-prev"></img>'
                 }
             },
             {
@@ -47,7 +47,7 @@ $(function () {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     nextArrow: '<img src="img/img-andrii/arrow-right.svg" class="slick-btn slick-next"></img>',
-                    prevArrow: '<img src="img/img-andrii/arrow-left.svg" class="slick-btn slick-next"></img>'
+                    prevArrow: '<img src="img/img-andrii/arrow-left.svg" class="slick-btn slick-prev"></img>'
                 }
             },
             {
@@ -61,8 +61,8 @@ $(function () {
         arrows: true,
         dots: true,
         slidesToShow: 1,
-        nextArrow: '<img src="img/img-andrii/arrow-right.svg" class="slick-btn slick-next"></img>',
-        prevArrow: '<img src="img/img-andrii/arrow-left.svg" class="slick-btn slick-next"></img>'
+        nextArrow: '<img src="img/img-andrii/arrow-right-1.svg" class="slick-btn slick-next-1 slick-next"></img>',
+        prevArrow: '<img src="img/img-andrii/arrow-left-1.svg" class="slick-btn slick-prev-1 slick-prev"></img>'
     });
 
     $('.menu__btn').on('click', function () {
