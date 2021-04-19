@@ -23,5 +23,11 @@ function min(arr, toReturn) {
   return arr.indexOf(Math.min(...arr));
 }
 
-
 //задача 4 https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
+
+function warnTheSheep(queue) {
+  const position = queue.reverse().indexOf('wolf');
+  return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`;;
+}
+
+//задача 5 https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
