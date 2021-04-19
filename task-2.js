@@ -31,3 +31,9 @@ function warnTheSheep(queue) {
 }
 
 //задача 5 https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
+
+function maps(x){
+  return x.map(n => n * 2);
+}
+
+//задача 6 https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
