@@ -37,3 +37,10 @@ function maps(x){
 }
 
 //задача 6 https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+
+function firstNonConsecutive (arr) {
+  const result = arr.find((number, index) => number !== index + arr[0]);
+  return Number.isInteger(result) ? result : null;
+}
+
+//задача 7 https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
