@@ -36,11 +36,11 @@ function maps(x){
   return x.map(n => n * 2);
 }
 
-//задача 6 https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+//задача 6 ttps://www.codewars.com/kata/beginner-lost-without-a-map
 
 function firstNonConsecutive (arr) {
   const result = arr.find((number, index) => number !== index + arr[0]);
   return Number.isInteger(result) ? result : null;
 }
 
-//задача 7 https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+//задача 7 https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
