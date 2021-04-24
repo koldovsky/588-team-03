@@ -1,43 +1,68 @@
-@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap); @import url(https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap); * {
+    box-sizing: border-box;
+    font-family: Abril Fatface, cursive;
+    color: #fff;
+}
 
- * {
-    box-sizing: inherit;
-    margin: 0;
-   
+html {
+    background-color: #1d1f23;
 }
 
 header {
-    background-color: #1d1f23;
-    padding: 30px 40px;
+    height: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+header div a {
+    text-decoration: none;
 }
 
 .headertitle {
-    color:#fefefe;
-    text-decoration: none;
-    
+    font-size: 34px;
+    font-stretch: 100%;
+    font-weight: 400;
 }
 
-div .menu {
-    color:#fefefe;
-    text-decoration: none;
-   
+ul {
+    margin-left: 0;
 }
+
+li {
+    list-style-type: none;
+    padding: 30px;
+}
+
+.menu-item-list a {
+    font-family: Muli,sans-serif;
+    cursor: pointer;
+}
+
+.menu-item-list a:hover {
+    color: #ffc962;
+}
+
 .container {
-    text-decoration: none;
+    max-width: 1220;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.menu-list {
     display: flex;
-    align-items: center;
+    padding-left: 30px;
 }
 
 .banner {
-    background-image: 
-    linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-      ),
-    url(../img/img-vlada/fon-shop.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/img-vlada/fon-shop.jpg);
     height: auto;
     padding: 100px 0;
+    margin-top: 100px;
     font-family: "Abril Fatface", cursive;
     font-size: 36px;
     font-weight: 700;
@@ -48,92 +73,46 @@ div .menu {
 .main {
     background-color: #1d1f23;
     font-family: "Mulish", sans-serif;
-
 }
 
 .products {
     display: grid;
-    grid-template-columns: 33% 33% 33% ;
-    grid-template-rows: 50% 50%;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .photo {
     width: 369.99px;
-    height: 426.23px;
     margin: 30px 0 0;
     padding: 0 15px;
 }
 
- h2 {
-     color:#fefefe;
+h2 {
+    color: #fefefe;
 }
 
-h3 {
-      color:#E03A3E;
+p {
+    color: #E03A3E;
 }
-
 
 .newsletter {
-    background-image: 
-    linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-      ),
-    url(../img/img-vlada/fon-shop.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/img-vlada/fon-shop.jpg);
     font-family: "Mulish", cursive;
     color: #AAB6cd;
 }
- 
+
 footer {
-   color: #1d1f23;
+    color: #1d1f23;
 }
- .menu-footer {
+
+.menu-footer {
     padding-top: 85px;
     padding-bottom: 30px;
+}
 
- }
-
- .end {
-     padding-top: 15px;
+.end {
+    padding-top: 15px;
     padding-bottom: 15px;
- }
-/* button*/
- input .button {
-    padding: 0;
-    list-style-type: none;
 }
-
-.button {
-    font-size: 25px;
-    width: 8em;
-    height: 2em;
-    color: orange;
-    border-left: 0.08em solid;
-    position: relative;
-    margin-top: 0.8em;
-    cursor: pointer;
-}
-
-.button::before,
-.button::after
- {
-    content: '';
-    position: absolute;
-    width: inherit;
-    border-left: inherit;
-    z-index: -1;
-}
-
-.button::before {
-    height: 80%;
-    top: 10%;
-    left: calc(-0.15em - 0.08em * 2);
-    filter: brightness(0.8);
-}
-
-.button::after {
-    height: 60%;
-    top: 20%;
-    left: calc(-0.15em * 2 - 0.08em * 3);
-    filter: brightness(0.6);
