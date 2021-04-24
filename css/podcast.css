@@ -11,7 +11,7 @@ header {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 1;
 }
 
@@ -31,7 +31,7 @@ li {
     padding: 30px;
 }
 .menu-item-list a {
-    font-family: Muli,sans-serif;
+    font-family: Mulish,sans-serif;
     cursor: pointer;
 }
 .menu-item-list a:hover {
