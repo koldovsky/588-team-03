@@ -958,6 +958,55 @@ li {
 }
 
 @media (max-width: 430px) {
+<<<<<<< HEAD
+    .learn__more-btn{
+        margin-top: 15px;
+    }
+    .contacts__title {
+        padding-top: 115px;
+    }
+}
+
+@media (max-width: 400px){
+    .timer-p-d, .timer-p-h, .timer-p-m, .timer-p-s{
+        font-size: 16px;
+    }
+    .timer-t{
+       font-size: 24px;
+    }
+}
+
+@media (max-width: 376px){
+    .podcasts__link{
+        margin-bottom: 15px;
+    }
+    .sale__title{
+        font-size: 34px;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ //   <!-- Верстка моєї частини головної сторінки, Serhii = початок-->
+
+=======
 	.learn__more-btn {
 		margin-top: 15px;
 	}
@@ -1010,3 +1059,4 @@ li {
 		height: 3010px;
 	}
 }
+>>>>>>> e185abd75b4303229bea5e898e1de7aece73854d
