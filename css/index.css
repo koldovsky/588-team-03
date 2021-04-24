@@ -18,6 +18,7 @@ body{
     font-size: 16px;
     line-height: 19px;
     font-weight: normal;
+    overflow-x:hidden;
 }
 
 h2, h3{
@@ -480,7 +481,6 @@ grid-template-areas: "img title"
 .carousel__item-text{
     color: #aab6cd;
     width: 80%;
-    margin-left: 100px ;
 }
 
 .carousel .slick-dots{
@@ -520,6 +520,7 @@ grid-template-areas: "img title"
     height: 30px;
     position: absolute;
     top: 35%;
+    z-index: 1000;
 }
 
 .carousel .slick-active button{
@@ -535,8 +536,13 @@ grid-template-areas: "img title"
     cursor: pointer;
 }
 
+.carousel__text{
+  display: flex;
+  justify-content: center;
+}
+
 .our__team{
-    background: url(../img/img-andrii/about-us-bg.jpg) no-repeat;
+    background: url(https://wallpapers-fenix.eu/full/160116/081647706.jpg) no-repeat;
     background-size: cover;
     color: var(--white-color);
     height: 1018px;
@@ -639,6 +645,9 @@ grid-template-areas: "img title"
     .carousel {
         margin-top: -160px;
     }
+    .about__describe-title{
+      line-height: 1;
+    }
 } 
 
 @media (max-width: 1024px) {
@@ -652,6 +661,13 @@ grid-template-areas: "img title"
     }
     .carousel {
         margin-top: -110px;
+    }
+    .team__people {
+        gap: 30px;
+    }
+    .team__people-photo img {
+        width: 160px;
+        height: 165px;
     }
 }
 
@@ -759,6 +775,17 @@ grid-template-areas: "img title"
     .carousel {
         margin-top: -30px;
     }
+    .team__people {
+        display: block;
+    }
+    .our__team{
+        height: 1700px;
+    }
+    .team__people-item {
+        display: flex;
+        justify-content: stretch;
+        margin-bottom: 45px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -792,6 +819,10 @@ grid-template-areas: "img title"
     .about__describe-text, .about__describe-title{
         margin-left: 20px;  
         margin-right: 20px;
+    }
+    .carousel {
+        height: 500px;
+        padding-top: 221px;
     }
 }
 
@@ -870,6 +901,28 @@ grid-template-areas: "img title"
     .timer-t {
         font-size: 40px;
     }
+    .title {
+        padding-top: 48px;
+    }
+    .carousel {
+        height: 500px;
+    }
+    .carousel {
+        padding-top: 126px;
+    }
+    .team__people-item {
+        display: block;
+        text-align: center;
+    }
+    .team__people-icon {
+        margin-left: 0px;
+    }
+    .our__team{
+        height: 2600px;
+    }
+    .team__people-item {
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -893,11 +946,17 @@ grid-template-areas: "img title"
     .sale__title{
        font-size: 38px;
     }
+    .our__team {
+        height: 2700px;
+    }
 }
 
 @media (max-width: 480px) {
     .sponsors .slick-btn{
         margin-top: 13%;
+    }
+    .our__team {
+        height: 2750px;
     }
 }
 
@@ -908,6 +967,9 @@ grid-template-areas: "img title"
     .contacts__title {
         padding-top: 115px;
     }
+    .our__team {
+        height: 2800px;
+    }
 }
 
 @media (max-width: 400px){
@@ -917,6 +979,12 @@ grid-template-areas: "img title"
     .timer-t{
        font-size: 24px;
     }
+    .about__describe-title{
+       font-size: 36px;
+    }
+    .our__team {
+        height: 2850px;
+    }
 }
 
 @media (max-width: 376px){
@@ -925,6 +993,24 @@ grid-template-areas: "img title"
     }
     .sale__title{
         font-size: 34px;
+    }
+    .carousel .slick-dots {
+     margin-top: -50px;
+    }
+    .our__team {
+        height: 2950px;
+    }
+ }
+
+@media (max-width: 350px){
+    .our__team {
+        height: 2980px;
+    }
+ }
+
+@media (max-width: 346px){
+    .our__team {
+        height: 3010px;
     }
  }
 
