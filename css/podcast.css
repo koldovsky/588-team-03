@@ -5,8 +5,11 @@
 html {
     background-color:#1d1f23;
 }
+.clock {
+    padding-top: 10px;
+}
 header {
-    height: 20px;
+    height: 30px;
 }
 .header {
     display: flex;
@@ -40,7 +43,7 @@ li {
 .container {
     max-width: 1220;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0px 10px;
 }
 .menu-list {
     display: flex;
@@ -51,6 +54,7 @@ li {
     background-blend-mode: darken;
     height: 250px;
     font-size: 58px;
+    margin-top: 100px;
 }
 h1 {
     text-align: center;
