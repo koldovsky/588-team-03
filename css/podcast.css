@@ -13,12 +13,6 @@ body {
     display: block;
 }
 
-@media (max-width: 1200px) {
-    body {
-        
-    }
-}
-
 .clock {
     padding-top: 10px;
 }
@@ -40,6 +34,11 @@ header div a {
     font-stretch: 100%;
     font-weight: 400;
 }
+
+.menu-btn {
+    display: none;
+}
+
 ul {
     margin-left: 0;
 }
@@ -252,15 +251,53 @@ h3 {
     }
 }
     
-}
 
-@media (max-width: 370px) {
+@media (max-width: 380px) {
     .podcast {
         background-size: auto;
         height: 90px;
         font-size: 25px;
         margin-top: 170px;
     }
+    
+    .menu-list {
+        display: block;
+		position: absolute;
+		top: 100px;
+		left: 0;
+		background-color: #1d1f23;
+		right: 0;
+		text-align: center;
+		transform: translateY(-450px);
+		transition: all .8s;
+    }
+
+    .menu-list.menu-list--active {
+		transform: translateY(0);
+	}
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        width: 24px;
+        height: 16px;
+        border: none;
+        border-top: 2px solid #fefefe;
+        border-bottom: 2px solid #fefefe;
+        background-color: transparent;
+        position: relative;
+        outline: none;
+        }
+        .menu-btn::before {
+            content: ' ';
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: #fff;
+            left: 0;
+            top: 5px;
+        }
+
     li {
        padding: 20px;
    }
