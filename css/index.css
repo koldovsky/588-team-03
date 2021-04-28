@@ -607,6 +607,31 @@ li {
 	margin-left: 10px;
 }
 
+
+
+
+
+
+
+//Serhii's part 
+
+.background_picture {
+	background: url(../img/img-serhii/very-background-picture-shop.jpg);
+	background-size: 100%;
+}
+
+.books-title {
+	color: rgba(255, 255, 255, 0.377);
+	font-size: 45px;
+	text-align: center;
+	padding: 50px;
+
+	
+
+}
+
+
+
 @media (max-width: 2000px) {
 	.episodes__item img {
 		max-width: 100%;
@@ -1011,24 +1036,3 @@ li {
 	}
 }
 
-
-
-
-
-//Serhii's part 
-
-.background_picture {
-	background: url(../img/img-serhii/very-background-picture-shop.jpg);
-	background-size: 100%;
-
-}
-
-.books-title {
-	color: rgba(255, 255, 255, 0.377);
-	font-size: 45px;
-	text-align: center;
-	padding: 50px;
-
-	
-
-}
