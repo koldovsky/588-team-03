@@ -48,7 +48,7 @@ li {
 }
 
 .container {
-    max-width: 1220;
+    max-width: 1220px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -84,35 +84,122 @@ li {
 }
 
 .photo {
-    width: 369.99px;
+    width: 500px;
     margin: 30px 0 0;
     padding: 0 15px;
 }
 
 h2 {
+    font-family: "Mulish", cursive;
     color: #fefefe;
 }
 
-p {
+.cost {
     color: #E03A3E;
 }
 
-.newsletter {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../img/img-vlada/fon-shop.jpg);
-    font-family: "Mulish", cursive;
-    color: #AAB6cd;
+.about-information {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),
+    url(../img/img-vlada/fon-shop.jpg); 
 }
 
-footer {
+.name-page-three {
+    text-align: center;
+}
+
+.donate-button{
+    font-size: 16px;
     color: #1d1f23;
+    padding:  18px 35px;
+    background: #ffc962;  
+    transition: all .3s;
+    border: 1px solid transparent;
+    display: inline-block;
+    margin-left: 875px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Mulish, sans-serif;
+    align-content: center;
+}
+.donate-button:hover{
+    background: #ffb72f;
 }
 
-.menu-footer {
-    padding-top: 85px;
-    padding-bottom: 30px;
+
+
+
+
+
+
+
+.button {
+    font-size: 16px;
+	color: #1d1f23;
+	padding: 18px 35px;
+	background: #ffc962;
+	transition: all .3s;
+	border: 1px solid transparent;
+	display: inline-block;
+	margin-right: 20px;
 }
 
-.end {
-    padding-top: 15px;
-    padding-bottom: 15px;
+.button:hover {
+    background: #ffb72f; 
 }
+
+/*footer*/
+
+.footer--inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    text-decoration: none;
+}
+.end-menu--list{
+    display: flex;
+    padding-left: 30px;
+}
+.footer--title{
+    font-size: 32px;
+    color: #fefefe;
+    padding-left: 15px;
+    padding-bottom: 23px;
+    text-decoration: none;
+}
+.end-menu-link{
+    color: #fefefe;
+    text-decoration: none;
+    font-family: Mulish,sans-serif;
+}
+.end-menu-link:hover {
+    color: #ffc962;
+}
+
+.created-by {
+    display: flex;
+    justify-content: space-between;
+    font-family: Mulish, sans-serif;
+}
+
+.date {
+    font-family: Mulish, sans-serif;
+    color: #aab6cd;
+}
+.code {
+    margin-top: 0px;
+
+
+}
+.reserved {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.69;
+    font-weight: 400;
+    font-family: Mulish, sans-serif;
+}
+
+
+
+
