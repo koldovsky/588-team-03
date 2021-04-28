@@ -214,6 +214,11 @@ h3 {
         font-size: 32px;
         margin-top: 140px;
     }
+
+    h1 {
+        padding-top: 35px;
+        font-size: 40px;
+    }
     .menu-list {
         flex-wrap: wrap;
         font-size: 13px;
@@ -258,6 +263,11 @@ h3 {
         height: 90px;
         font-size: 25px;
         margin-top: 170px;
+    }
+    
+    h1 {
+        padding-top: 22px;
+        font-size: 32px;
     }
     
     .menu-list {
