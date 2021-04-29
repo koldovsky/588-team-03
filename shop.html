@@ -19,6 +19,9 @@
                     <a href="index.html">
                         <h2 class="headertitle">Colora Podcast</h2>
                     </a>
+                    <div class="menu-icon">
+                        <span></span>
+                    </div>
                     <nav class="menu">
                         <ul class="menu-list">
                             <li class="menu-item-list">
@@ -34,10 +37,17 @@
                                 <a href="contacts.html">Contacts</a>
                             </li>
                             <li class="menu-item-list">
-                                <a href="about-us.html#donate">Donate</a>
+                                 <a href="about-us.html#donate">Donate</a>
                             </li>
                         </ul>
                     </nav>
+                </div>
+
+                <div>
+                    <a class="nav-link openCartLink" href="#modal-cart" data-bs-toggle="modal">
+                      <i class="fas fa-shopping-cart"></i>
+                        Cart<span id="cart-badge" class="badge bg-dark"></span>
+                    </a>
                 </div>
             </div>
         </header>
@@ -48,13 +58,16 @@
                 </div>
             </section>
             <div class="main">
-                <div class="products">
+                <div class="products products-container">
                     <div class="product">
                         <img class="photo" src="img/img-vlada/cups_for_shop.jpg" alt="Colora Podcast Mugs">
                         <div>
                             <h2>Colora Podcast Mugs</h2>
                             <p class ="cost">14$</p>
-                            <input class="button" type="button" name="Buy" value="Buy">
+                             <div class="buttons">
+                                <button class="button" type="button">Buy</button>
+                                
+                             </div>
                         </div>
                     </div>
                     <div class="product">
@@ -62,7 +75,10 @@
                         <div>
                             <h2>Colora Podcast T-Shirts</h2>
                             <p class ="cost">40$</p>
-                            <input class="button" type="button" name="Buy" value="Buy">
+                            <div class="buttons">
+                                <button class="button" type="button">Buy</button>
+                
+                             </div>
                         </div>
                     </div>
                     <div class="product">
@@ -70,23 +86,32 @@
                         <div>
                             <h2>Colora Podcast Postcards</h2>
                             <p class ="cost">60$</p>
-                            <input class="button" type="button" name="Buy" value="Buy">
+                            <div class="buttons">
+                                <button class="button" type="button">Buy</button>
+                                
+                             </div>
                         </div>
                     </div>
                     <div class="product">
                         <img class="photo" src="img/img-vlada/bag_for_shop.jpg" alt="Colora Podcast Bags">
-                        <div>
+                        <div class="buttons">
                             <h2>Colora Podcast Bags</h2>
                             <p class ="cost">35$</p>
-                            <input class="button" type="button" name="Buy" value="Buy">
+                            <div class="buttons">
+                                <button class="button" type="button">Buy</button>
+                                
+                             </div>
                         </div>
                     </div>
                     <div class="product">
                         <img class="photo" src="img/img-vlada/books_for_shop.jpg" alt="Colora Podcast Books">
-                        <div>
+                        <div class="buttons">
                             <h2>Colora Podcast Books</h2>
                             <p class ="cost">20$</p>
-                            <input class="button" type="button" name="Buy" value="Buy">
+                            <div class="buttons">
+                                <button class="button" type="button">Buy</button>
+                                
+                             </div>
                         </div>
                     </div>
                     <div class="product">
@@ -94,7 +119,10 @@
                         <div>
                             <h2>Colora Podcast Stickers</h2>
                             <p class ="cost">20$</p>
-                            <input class="button" type="button" name="Buy" value="Buy">
+                            <div class="buttons">
+                                <button class="button">Buy</button>
+                                
+                             </div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +143,6 @@
                     <li class="end-menu--list-item"><a class="end-menu-link" href="about-us.html">Donate</a></li>
                 </ul>
             </nav>
-            
                 </div>
                 <hr>
                 <div class="created-by">
@@ -124,5 +151,54 @@
                 </div>
                     <p class="date code">HTML5/CSS3/JavaScript Fundamentals - Team 3</p>    
         </footer>
+
+        <div class="alert-container"></div>
+
+        <!---information-->
+        
+
+        <!---shop-->
+
+    <div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cartLabel">Cart</h5>
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="cart-product-list-container"></div>
+              <hr>
+              <div class="container">
+                <form class="form-contacts">
+                  <div class="form-group row">
+                    <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                    <input class="form-control col-8" type="text" id="client-name" required>
+                  </div>
+                  <div class="form-group row">
+                    <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                    <input class="form-control col-8" type="email" id="client-email" required>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary order">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+        <script src="js/burgermenuforshop.js"></script>
+        <script async src="js/alert-window.js"></script>
+        <script defer src="js/products-service.js"></script>
+        <script defer src="js/cart.js"></script>
+        <script defer src="js/product-list.js"></script>    
+        <script defer src="js/shop.js"></script>
+    
+        
     </body>
 </html>

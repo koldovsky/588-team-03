@@ -8,6 +8,10 @@ html {
     background-color: #1d1f23;
 }
 
+body._lock{
+    overflow: hidden;
+}
+
 header {
     height: 20px;
 }
@@ -27,6 +31,7 @@ header div a {
     font-size: 34px;
     font-stretch: 100%;
     font-weight: 400;
+    font-family: Abril Fatface, cursive;
 }
 
 ul {
@@ -45,6 +50,10 @@ li {
 
 .menu-item-list a:hover {
     color: #ffc962;
+}
+
+.menu-icon{
+    display: none;
 }
 
 .container {
@@ -92,26 +101,33 @@ li {
 h2 {
     font-family: "Mulish", cursive;
     color: #fefefe;
+    text-align: center;
 }
 
 
 .cost {
     color: #E03A3E;
+    text-align: center;
 }
 
 .button {
     font-size: 16px;
 	color: #1d1f23;
-	padding: 18px 35px;
+	padding: 15px 40px;
 	background: #ffc962;
 	transition: all .3s;
 	border: 1px solid transparent;
 	display: inline-block;
 	margin-right: 20px;
+    
 }
 
 .button:hover {
     background: #ffb72f; 
+}
+
+.buttons{
+    text-align: center;
 }
 
 /*footer*/
@@ -156,8 +172,8 @@ h2 {
 .code {
     margin-top: 0px;
 
-
 }
+
 .reserved {
     margin-bottom: 10px;
     font-size: 13px;
@@ -167,6 +183,16 @@ h2 {
 }
 
 @media (max-width: 440px){
+
+    .menu-list, .footer--inner{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-list, .footer--inner > li{
+        padding: 10px 0;
+    }
+
     .conteiner{
         background-size: auto;
         height: 90px;
@@ -203,6 +229,13 @@ h2 {
         width: 100%;
     }
 
+    h2{
+        font-size: 11px;
+    }
+    .footer--title{
+        font-size: 11px;
+    }
+
     .button {
         font-size: 12px;
         color: #1d1f23;
@@ -214,9 +247,20 @@ h2 {
         margin-right: 20px;
     }
 
+    
+
 }
 
 @media (max-width: 750px) {
+    .menu-list, .footer--inner{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-list, .footer--inner > li{
+        padding: 10px 0;
+    }
+
     .conteiner {
         background-size: auto;
         height: 150px;
@@ -264,7 +308,81 @@ h2 {
         display: inline-block;
         margin-right: 19px;
     }
+
+    .menu-icon{
+      z-index: 5;
+      display: block;
+      position: relative;
+      width: 30px;  
+      height: 18px;
+    }
+     
+    .menu-icon span,
+    .menu-icon::before,
+    .menu-icon::after{
+      left: 0;
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      transform: all 0.3s ease 0s;
+      background-color:#aab6cd;
+    }
     
+    .menu-icon::before,
+    .menu-icon::after{
+        content: "";
+    }
+
+    .menu-icon::before{
+       top: 0;  
+    }
+    .menu-icon::after{
+        bottom: 0;
+    }
+    
+    .menu-icon span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+    
+    .menu{
+       position: fixed;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       transform: translate(-100%, 0px);
+       background-color: #1d1f23;
+       padding: 100px 30px 30px 30px;
+       transition: all 0.3s ease 0s;
+       overflow: auto;
+    }
+     
+    .menu._active{
+        transform: translate(0, 0);
+    }
+    .menu-list > li{
+        margin: 0 0 30px 0;
+    }
+
+    .menu-list > li:last-child{
+        margin-bottom: 0;
+    }
+
+    .menu-list {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: #1d1f23;
+        right: 0;
+        text-align: center;
+        transform: translateY(-65px);
+        transition: all .8s;
+    }
+
+
+
+
     }
 
 
