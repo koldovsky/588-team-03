@@ -17,24 +17,17 @@ class ProductList {
                            ? a.price - b.price
                            : b.price - a.price)
         .forEach(product => {
-        productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
-                    <div class="card product">
-                      <img class="card-img-top" src="${product.image}" 
-                          alt="${product.title}">
-                      <div class="card-body d-flex flex-column">
-                        <h4 class="card-title">${product.title}</h4>
-                        <p class="card-text flex-fill">${product.description}</p>
-                        <div class="d-flex justify-content-around">
-                          <button class="btn btn-info" data-bs-toggle="modal"
-                            data-bs-target="#productInfoModal" data-id="${product.id}">Info
-                          </button>
-                          <button class="btn btn-primary buy" data-id="${product.id}">
-                            $${product.price} - Buy
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>`;
+          productListDomString += `<div class="product">
+            <img class="photo"  src="${product.image}" alt="${product.title}">
+            <div>
+                <h2>${product.title}</h2>
+                <p class ="cost">${product.price}$</p>
+                <div class="buttons">
+                    <button class="button" type="button" data-id="${product.id}">Buy</button>
+    
+                 </div>
+            </div>
+        </div>`;
       });
       this.container.innerHTML = productListDomString;
     }
