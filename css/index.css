@@ -506,6 +506,10 @@ li {
 	height: 15px;
 }
 
+.slick-btn:hover{
+  	cursor: pointer;
+}
+
 .slick-next {
 	right: 0;
 }
@@ -670,6 +674,11 @@ li {
 	.about__describe-title {
 		line-height: 1;
 	}
+	.slick-btn{
+    		border: 1px solid transparent;
+    		background-color: var(--white-color);
+    		border-radius: 50%;
+        }
 }
 
 @media (max-width: 1024px) {
