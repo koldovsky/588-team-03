@@ -17,13 +17,13 @@ class ProductList {
                            ? a.price - b.price
                            : b.price - a.price)
         .forEach(product => {
-          productListDomString += `<div class="product">
+          productListDomString += `<div class="card product">
             <img class="photo"  src="${product.image}" alt="${product.title}">
             <div>
                 <h2>${product.title}</h2>
                 <p class ="cost">${product.price}$</p>
                 <div class="buttons">
-                    <button class="button" type="button" data-id="${product.id}">Buy</button>
+                    <button class="button buy" type="button" data-id="${product.id}">Buy</button>
     
                  </div>
             </div>
@@ -48,16 +48,6 @@ class ProductList {
             this.handleProductBuyClick(event)
           )
         );
-      document.querySelector('.sort-asc').addEventListener('click', async () => {
-          this.sortDirection = 'ascending';
-          await this.renderProducts();
-          this.addEventListeners();
-      });
-      document.querySelector('.sort-desc').addEventListener('click', async () => {
-          this.sortDirection = 'descending';
-          await this.renderProducts();
-          this.addEventListeners();
-      });
     }
     async handleProductInfoClick(event) {
       const button = event.target; // Button that triggered the modal
