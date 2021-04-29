@@ -19,7 +19,7 @@ class ProductList {
         .forEach(product => {
         productListDomString += `<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
                     <div class="card product">
-                      <img class="card-img-top" src="/${product.image}" 
+                      <img class="card-img-top" src="${product.image}" 
                           alt="${product.title}">
                       <div class="card-body d-flex flex-column">
                         <h4 class="card-title">${product.title}</h4>
