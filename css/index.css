@@ -507,7 +507,7 @@ li {
 }
 
 .slick-btn:hover{
-  	cursor: pointer;
+  cursor: pointer;
 }
 
 .slick-next {
@@ -610,7 +610,6 @@ li {
 	height: 30px;
 	margin-left: 10px;
 }
-
 /*Serhii's part*/ 
 
 .background_picture {
@@ -702,9 +701,6 @@ li {
 
 }
 
-
-
-
 .our_app {
 	background: url(../img/img-serhii/very-background-picture-note.jpg);
 	background-size: 100%;
@@ -728,13 +724,6 @@ li {
 	height: 200px;
 }
 
-
-
-
-=======
-}
-
->>>>>>> bba453e285980861203121de9d3cdc13fbcfc3ce
 @media (max-width: 2000px) {
 	.episodes__item img {
 		max-width: 100%;
