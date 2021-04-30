@@ -102,9 +102,9 @@ li {
 }
 
 h2 {
-    font-family: "Mulish", cursive;
     color: #fefefe;
     text-align: center;
+    font-weight: 400;
 }
 
 
@@ -133,6 +133,11 @@ h2 {
     text-align: center;
 }
 
+.modal-footer button {
+    color: black;
+    font-weight: 400;
+}
+
 /*footer*/
 
 .footer--inner{
@@ -141,6 +146,15 @@ h2 {
     align-items: center;
     height: 130px;
     text-decoration: none;
+}
+
+.footer--inner a {
+    text-decoration: none;
+}
+
+.footer--inner a h2 {
+    font-family: "Abril Fatface", cursive;
+    font-weight: 400;
 }
 .end-menu--list{
     display: flex;
@@ -185,77 +199,23 @@ h2 {
     font-family: Mulish, sans-serif;
 }
 
-@media (max-width: 440px){
 
-    .menu-list, .footer--inner{
-        display: flex;
-        align-items: center;
+
+@media (max-width: 1040px) {
+    .products{
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        font-size: 13px;
+        padding-left: 10px;
+        line-height: 0;
     }
 
-    .menu-list, .footer--inner > li{
-        padding: 10px 0;
-    }
-
-    .conteiner{
-        background-size: auto;
-        height: 90px;
-        font-size: 25px;
-        margin-top: 170px; 
-    }
-    .products{ 
-        grid-template-columns: 1fr;
-        gap: 5px;
-        margin: 10px;
-        background-size: auto;   
-    }
-    .headertitle {
-        font-size: 23px;
-        font-weight: 400;
-        margin-left: 10px;
-        line-height: 1;
-    }
-    li {
-        padding: 25px;
-    }
-    .heading-section {
-        grid-template-columns: 1fr;
-        gap: 5px;
-        margin: 10px;
-        background-size: auto;    
-    }
-    .heading-profession {
-        margin: 10px;
-        font-size: 30px;
-    }
-    
-    .photo{
+    .photo {
         width: 100%;
+        
     }
-
-    h2{
-        font-size: 11px;
-    }
-    .footer--title{
-        font-size: 11px;
-    }
-
-    .button {
-        font-size: 12px;
-        color: #1d1f23;
-        padding: 10px 20px;
-        background: #ffc962;
-        transition: all .3s;
-        border: 1px solid transparent;
-        display: inline-block;
-        margin-right: 20px;
-    }
-    .end-menu--list-item{
-        display: none;
-    }
-
-    
-
 }
+
 
 @media (max-width: 750px) {
     .menu-list, .footer--inner{
@@ -389,11 +349,85 @@ h2 {
         display: none;
     }
 
-
-
-
+    .footer--inner {
+        justify-content: center;
+    }
 
     }
+
+@media (max-width: 440px){
+
+    .menu-list, .footer--inner{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-list, .footer--inner > li{
+        padding: 10px 0;
+    }
+
+    .conteiner{
+        background-size: auto;
+        height: 90px;
+        font-size: 25px;
+        margin-top: 170px; 
+    }
+    .products{ 
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin: 10px;
+        background-size: auto;   
+    }
+    .headertitle {
+        font-size: 23px;
+        font-weight: 400;
+        margin-left: 10px;
+        line-height: 1;
+    }
+    li {
+        padding: 25px;
+    }
+    .heading-section {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        margin: 10px;
+        background-size: auto;    
+    }
+    .heading-profession {
+        margin: 10px;
+        font-size: 30px;
+    }
+    
+    .photo{
+        width: 100%;
+    }
+
+    h2{
+        font-size: 11px;
+    }
+    .footer--title{
+        font-size: 11px;
+    }
+
+    .button {
+        font-size: 12px;
+        color: #1d1f23;
+        padding: 10px 20px;
+        background: #ffc962;
+        transition: all .3s;
+        border: 1px solid transparent;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .end-menu--list-item{
+        display: none;
+    }
+
+    
+
+}
+
+
 
 
 
