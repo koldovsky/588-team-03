@@ -2,11 +2,14 @@
     box-sizing: border-box;
     font-family: Abril Fatface, cursive;
     color: #fff;
+
 }
 
 html {
     background-color: #1d1f23;
+    max-height: 1100px;
 }
+
 
 body._lock{
     overflow: hidden;
@@ -246,6 +249,9 @@ h2 {
         display: inline-block;
         margin-right: 20px;
     }
+    .end-menu--list-item{
+        display: none;
+    }
 
     
 
@@ -379,6 +385,10 @@ h2 {
         transform: translateY(-65px);
         transition: all .8s;
     }
+    .end-menu--list-item{
+        display: none;
+    }
+
 
 
 
