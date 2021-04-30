@@ -506,6 +506,10 @@ li {
 	height: 15px;
 }
 
+.slick-btn:hover{
+  	cursor: pointer;
+}
+
 .slick-next {
 	right: 0;
 }
@@ -607,13 +611,7 @@ li {
 	margin-left: 10px;
 }
 
-
-
-
-
-
-
-//Serhii's part 
+/*Serhii's part*/ 
 
 .background_picture {
 	background: url(../img/img-serhii/very-background-picture-shop.jpg);
@@ -638,6 +636,7 @@ li {
 	font-size: 45px;
 	text-align: center;
 	padding: 50px;
+<<<<<<< HEAD
 }
 .book_item {
 	display: grid;
@@ -732,6 +731,10 @@ li {
 
 
 
+=======
+}
+
+>>>>>>> bba453e285980861203121de9d3cdc13fbcfc3ce
 @media (max-width: 2000px) {
 	.episodes__item img {
 		max-width: 100%;
