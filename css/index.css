@@ -617,18 +617,118 @@ li {
 
 .background_picture {
 	background: url(../img/img-serhii/very-background-picture-shop.jpg);
-	background-size: 100%;
+	background-size: 299em;
+}
+
+.background_picture {
+	background: url(../img/img-serhii/very-background-picture-shop.jpg);
+	background-size: 299em;
+}
+.books_shop_buy_instagram_contact {
+		background-color: rgba(0, 0, 0, 0.85);
+}
+
+.latest_books {
+	max-width: 1190px;
+	margin: auto;
 }
 
 .books-title {
-	color: rgba(255, 255, 255, 0.377);
+	color: rgb(255, 255, 255);
 	font-size: 45px;
 	text-align: center;
 	padding: 50px;
+}
+.book_item {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+}
 
-	
+.book_title_name {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	color: rgba(167, 189, 199, 0.712);
+	font-size: 20px;
+	font-weight: bold;
+	text-align: justify;
+	padding: 10px;
 
 }
+
+.book_price_figures {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	color: rgba(167, 189, 199, 0.712);
+	font-size: 20px;
+	font-weight: bold;
+	text-align: justify;
+	padding: 15px;
+	
+}
+
+.books_items_figures {
+	color: #ffb72f;
+}
+
+.books_items_describe {
+	color: rgba(167, 189, 199, 0.712);
+	font-size: 16px;
+	text-align: justify;
+	padding: 10px;
+}
+
+.books_button {
+	display: flex;
+	justify-content: center;
+}
+
+.books_items_button {
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	color: rgb(0, 0, 0);
+	padding: 14px 30px;
+	background-color: #e4c283;
+	border: 3px solid #d8985d;
+	transition: all .5s;
+	margin-top: 28px;
+
+}
+
+.books_items_button:hover {
+	background-color: #eea92a;
+	font-weight: bold;
+	border: 4px solid #c3e70c;
+
+}
+
+
+
+
+.our_app {
+	background: url(../img/img-serhii/very-background-picture-note.jpg);
+	background-size: 100%;
+}
+
+.app_social {
+	background-color: rgba(0, 0, 0, 0.65);
+}
+
+.app_title {
+	color: rgb(255, 255, 255);
+	font-size: 45px;
+	text-align: center;
+	padding: 50px;
+}
+
+.app_box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 200px;
+}
+
 
 
 
@@ -1035,4 +1135,6 @@ li {
 		height: 3010px;
 	}
 }
+
+
 
