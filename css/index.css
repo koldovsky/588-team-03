@@ -613,14 +613,11 @@ li {
 /*Serhii's part*/ 
 
 .background_picture {
-	background: url(../img/img-serhii/very-background-picture-shop.jpg);
+	background: url(../img/img-serhii/very-background-picture-shop.jpg)  no-repeat fixed;
 	background-size: 299em;
+	background-position: center;
 }
 
-.background_picture {
-	background: url(../img/img-serhii/very-background-picture-shop.jpg);
-	background-size: 299em;
-}
 .books_shop_buy_instagram_contact {
 		background-color: rgba(0, 0, 0, 0.85);
 }
@@ -633,6 +630,7 @@ li {
 .books-title {
 	color: rgb(255, 255, 255);
 	font-size: 45px;
+	font-weight: 500;
 	text-align: center;
 	padding: 50px;
 <<<<<<< HEAD
@@ -651,7 +649,6 @@ li {
 	font-weight: bold;
 	text-align: justify;
 	padding: 10px;
-
 }
 
 .book_price_figures {
@@ -662,8 +659,7 @@ li {
 	font-weight: bold;
 	text-align: justify;
 	padding: 15px;
-	
-}
+	}
 
 .books_items_figures {
 	color: #ffb72f;
@@ -682,7 +678,6 @@ li {
 }
 
 .books_items_button {
-	display: inline-block;
 	text-align: center;
 	font-size: 16px;
 	color: rgb(0, 0, 0);
@@ -691,38 +686,352 @@ li {
 	border: 3px solid #d8985d;
 	transition: all .5s;
 	margin-top: 28px;
-
+	border-radius: 15px;
 }
 
 .books_items_button:hover {
 	background-color: #eea92a;
 	font-weight: bold;
 	border: 4px solid #c3e70c;
+	border-radius: 15px;
+	padding: 13px 28px;
+	transition: all 0.4s;
+}
+
+.shop_title {
+	color: rgb(255, 255, 255);
+	font-size: 45px;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 70px;
+}
+
+.shop_box_items {
+	max-width: 1190px;
+	margin: auto;
+}
+
+.shop_items {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	max-height: 100%;
+    max-width: 100%;
+	justify-self: center;
+	gap: 30px;
+}
+
+.shop_item_img:hover {
+	overflow: hidden;
+	border: 1px;
+	border-radius: 12px;
+	transform: scale(1.5) rotate(25deg);
+	transition: transform 3s;
+}
+
+.shop_item_text {
+	pointer-events: none;
+	background-color: rgba(255, 255, 255, 0.87);
+	position: relative;
+	top: -155px;
+	margin: auto;
+	padding: 15px;
+	max-width: 220px;
+	text-align: center;
+	font-size: 19px;
+	color: rgb(0, 0, 0);
+}
+
+
+
+.shop_items_title {
+	height: 30px;
+}
+
+.shop_items_name {
+	height: 30px;
+}
+
+.shop_price_color {
+	height: 30px;
+	color: #d42c2c;
+	font-weight: bold;
+}
+
+.shop_all_button {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 90px;
+	margin-top: -70px;
+}
+
+.shop_all_link_button {
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	padding: 14px 30px;
+	border: 2px solid #ffc962;
+	transition: all .35s;
+}
+
+.shop_all_link_button:hover {
+	border: 2px solid #fefefe;
+	color: #ffc962;
+}
+
+
+
+
+.wanna_buy {
+    background: rgba(255, 201, 98, 0.8);	max-width: auto;
+	margin: auto;
+}
+
+
+.buy_title {
+	color: rgb(0, 0, 0);
+	font-size: 45px;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 90px;
+}
+
+.contacts_button {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 150px;
+	padding-bottom: 80px;
+}
+
+
+.contact_us_link_button {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.8);
+	padding: 18px 35px;
+	background: rgb(0, 0, 0);
+	transition: all .9s;
+	border: 1px solid transparent;
+	border-radius: 10px;
 
 }
 
+.contact_us_link_button:hover {
+	background: rgba(228, 189, 16, 0.75);
+	font-weight: bold;
+	font-style: italic;
+	padding: 18px 55px;
+	font-size: 30px;
+	color: rgb(34, 37, 39);
+	border: 2px solid rgba(105, 105, 105, 0.35);
+	border-radius: 10px;
+	box-shadow: 10px 12px 5px 1px rgba(105, 105, 105, 0.35);
+	transition: all 1.5s;
+}
+
+.instagram_box {
+	max-width: 1190px;
+	margin: auto;
+}
+
+.instagram_title {
+	color: rgb(255, 255, 255);
+	font-size: 45px;
+	font-weight: 500;
+	text-align: center;
+	padding: 80px;
+}
+
+.instagram_items_img {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+    grid-gap: 40px 25px;
+}
+
+
+
+
+
+
+.contact_items_title {
+	color: rgb(255, 255, 255);
+	font-size: 45px;
+	font-weight: 500;
+	text-align: center;
+	padding: 80px;
+}
+
+
+
+
+
+
 .our_app {
-	background: url(../img/img-serhii/very-background-picture-note.jpg);
+	background: url(../img/img-serhii/very-background-picture-note.jpg) no-repeat;
 	background-size: 100%;
+	background-position: bottom;
+
 }
 
 .app_social {
-	background-color: rgba(0, 0, 0, 0.65);
+	background-color: rgba(0, 0, 0, 0.75);
+	max-width: auto;
+	margin: auto;
+
 }
 
 .app_title {
 	color: rgb(255, 255, 255);
 	font-size: 45px;
+	font-weight: 500;
 	text-align: center;
-	padding: 50px;
+	padding: 100px;
 }
 
 .app_box {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	height: 200px;
+	justify-content: center;
+	height: 275px;
 }
+
+.app_item_google {
+	margin-top: -300px;
+	margin-right: 15px;
+	border: 1px solid #000000;
+	border-radius: 15px;
+	opacity: 0.7;
+}
+
+.app_item_google:hover {
+	opacity: 1;
+	transition: all .3s;
+}
+
+.app_item_apple {
+	margin-top: -300px;
+	border: 1px solid #000000;
+	margin-left: 15px;
+	border-radius: 15px;
+	opacity: 0.7;
+}
+
+.app_item_apple:hover {
+	opacity: 1;
+	transition: all .3s;
+}
+
+.footer {
+	background-color: rgba(15, 15, 15, 0.95);
+	max-width: auto;
+	margin: auto;
+	padding: 05px;
+}
+
+.container {
+	max-width: 1190px;
+	/* padding: 0 10px;
+	margin: 0 auto; */
+
+}
+
+.footer__title {
+	font-size: 26px;
+	color: var(--white-color);
+	padding-left: 15px;
+	padding-bottom: 23px;
+	font-weight: 500;
+}
+
+.menu__btn {
+	display: none;
+}
+
+.menu__list-link {
+	color: var(--white-color);
+}
+
+.footer {
+	background: #1d1f23;
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 130px;
+	padding-top: 50px;
+}
+
+.menu__list {
+	display: flex;
+	padding-left: 30px;
+}
+
+.menu__list-item {
+	margin: 0 20px;
+	padding-bottom: 23px;
+}
+
+.menu__list-link:hover {
+	color: #ffbc41;
+}
+
+.hr {
+	max-height: 1px;
+	opacity: 0.2;
+	padding-bottom: 20px;
+}
+
+.created-by {
+	max-width: 1190px;
+	padding: 0 10px;
+	margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: Mulish, sans-serif;
+	color: #ffffff;
+
+}
+
+.date {
+    font-family: Mulish, sans-serif;
+    color: #bdcbe6;
+	max-width: 1190px;
+	padding: 0 10px;
+	margin: 0 auto;
+	color: #ffffff;
+	font-size: 13px;
+
+
+}
+.code {
+    margin-top: 0px;
+	max-width: 1190px;
+	padding: 0 10px;
+	margin: 0 auto;
+	color: #ffffff;
+	font-size: 13px;
+
+
+}
+
+.reserved {
+	max-width: 1190px;
+	margin: end;
+
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.69;
+    font-weight: 400;
+    font-family: Mulish, sans-serif;
+	color: #ffffff;
+}
+
+
+
 
 @media (max-width: 2000px) {
 	.episodes__item img {
