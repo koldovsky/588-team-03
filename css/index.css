@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    background-color: #000000;
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     line-height: 19px;
@@ -716,6 +717,11 @@ li {
     gap: 30px;
 }
 
+.shop_item_preview {
+border: 2px solid color: none;
+}
+
+
 .shop_item_img:hover {
     overflow: hidden;
     border: 1px;
@@ -846,7 +852,7 @@ li {
 .contact_box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 .contact_items_text_question {
@@ -858,8 +864,9 @@ li {
 }
 
 .contact_adress_electronic {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+
 }
 
 .contact_adress_electronic_direct {
@@ -880,12 +887,18 @@ li {
     }
 
     .contact_items_text {
+        display: flex;
+        align-items: center;
+        margin-right: 120px;
         font-size: 16px;
         color: rgb(194, 181, 181);
         line-height: 30px;
         width:220px;
     }
     .ui-link {
+        display: flex;
+        align-items: center;
+        margin-left: 90px;
         line-height: 30px;
         color: #ffbc41;
     }
@@ -917,12 +930,17 @@ li {
 }
 
 .contact_form {
-    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    /* margin-top: -25px;
     margin-bottom: -255px;
     margin-left: 45px;
-    margin-right: 15px;
+    margin-right: 15px; */
     background-color: #333333;
 }
+
+
+
 
 .form_name {
     padding-top: 10px;
@@ -1033,7 +1051,8 @@ li {
 
 .app_item_google:hover {
     opacity: 1;
-    transition: all .3s;
+    transform: scale(1.2);
+    transition: transform 2s;
 }
 
 .app_item_apple {
@@ -1046,7 +1065,8 @@ li {
 
 .app_item_apple:hover {
     opacity: 1;
-    transition: all .3s;
+    transform: scale(1.2);
+    transition: transform 2s;
 }
 
 .footer {
@@ -1631,5 +1651,130 @@ li {
 @media (max-width: 346px) {
     .our__team {
         height: 3010px;
+    }
+}
+
+@media (min-width: 380px) {
+    .book_item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .book_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .book_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+    }
+}
+
+@media (min-width: 1190px) {
+    .book_item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+@media (min-width: 380px) {
+    .shop_items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .shop_items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .shop_items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+
+    }
+}
+
+@media (min-width: 1190px) {
+    .shop_items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 380px) {
+    .instagram_items_img {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .instagram_items_img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .instagram_items_img {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1190px) {
+    .instagram_items_img {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 380px) {
+    .contact_box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact_box {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact_box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1190px) {
+    .contact_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
