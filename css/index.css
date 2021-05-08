@@ -796,7 +796,6 @@ border: 2px solid color: none;
 .contacts_button {
     display: flex;
     justify-content: center;
-    padding-bottom: 150px;
     padding-bottom: 80px;
 }
 
@@ -836,11 +835,15 @@ border: 2px solid color: none;
     padding: 80px;
 }
 
+
 .instagram_items_img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 40px 25px;
+    justify-items: center;
+    align-items: flex-end;
+    grid-gap: 40px 0px;
+
 }
 
 .contact_us {
@@ -993,6 +996,7 @@ border: 2px solid color: none;
     font-size: 16px;
     font-weight: bold;
     color: rgb(255, 255, 255);
+
 }
 
 .form_button {
@@ -1722,11 +1726,48 @@ border: 2px solid color: none;
 }
 
 @media (min-width: 380px) {
+    .buy_items {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media (min-width: 380px) {
+    .buy_title {
+        display: block;
+        vertical-align: middle;
+        line-height: 42px;
+    }
+}
+
+@media (min-width: 380px) {
+    .instagram_title {
+        display: block;
+        vertical-align: middle;
+        line-height: 42px;
+    }
+}
+
+@media (min-width: 380px) {
+    .app_title {
+        display: block;
+        vertical-align: middle;
+        line-height: 42px;
+    }
+}
+
+
+@media (min-width: 380px) {
     .instagram_items_img {
         display: grid;
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
 
 @media (min-width: 768px) {
     .instagram_items_img {
@@ -1776,5 +1817,18 @@ border: 2px solid color: none;
     .contact_box {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (min-width: 380px) {
+    .question {
+        display: inline-block;
+        vertical-align: top;
+        /* min-width:0;
+        justify-content: center;
+        vertical-align: center;
+        line-height: 32px;
+        font-size: larger; */
     }
 }
